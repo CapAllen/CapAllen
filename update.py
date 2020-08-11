@@ -3,9 +3,8 @@ from bs4 import BeautifulSoup
 
 res = requests.get('https://www.capallen.top/atom.xml')
 soup = BeautifulSoup(feed.content,'html.parser')
-nsfeed = {'nsfeed': 'http://www.w3.org/2005/Atom'}
 
-with open('README.md', 'w') as f:
+with open('README.md', 'w',encoding='utf-8') as f:
     f.write(r'''
 ```
                           ___       __       __       _______ .__   __.  __     _______.               
